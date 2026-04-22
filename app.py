@@ -1,7 +1,10 @@
 from flask import Flask
-app=Flask(__name__)
+
+app = Flask(__name__)
+
 @app.route("/")
 def home():
-     return "Version FINALE - CI/CD avec rollout restart !"
+    return "🚀 CI/CD Complet - Déployé automatiquement via Jenkins + GitHub + Kubernetes !"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
