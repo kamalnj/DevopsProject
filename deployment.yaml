@@ -2,22 +2,19 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webapp
-
 spec:
   replicas: 2
   selector:
     matchLabels:
       app: webapp
-
   template:
     metadata:
       labels:
         app: webapp
-
     spec:
       containers:
-        - name: webapp
-          image: webapp:latest
-          imagePullPolicy: IfNotPresent
-          ports:
-            - containerPort: 5000
+      - name: webapp
+        image: webapp:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000
