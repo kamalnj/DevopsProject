@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "🚀 CI/CD Complet - Déployé automatiquement via Jenkins + GitHub + Kubernetes last version kamal!"
+    return "🚀 CI/CD Complet - Déployé automatiquement via Jenkins + GitHub + Kubernetes last version kamal 44!"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
